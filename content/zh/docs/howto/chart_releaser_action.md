@@ -79,7 +79,7 @@ jobs:
 ```
 
 上述配置使用了[@helm/chart-releaser-action](https://github.com/helm/chart-releaser-action)
-将GitHub项目转换成自托管的Helm chart仓库。在每次想主分支推送后会通过检查项目中的每个chart来执行次操作，
+将GitHub项目转换成自托管的Helm chart仓库。在每次向主分支推送后会通过检查项目中的每个chart来执行次操作，
 且每当有新的chart版本时，会创建一个与chart版本对应的GitHub版本，添加Helm chart组件到这个版本中，
 并用该版本的元数据创建或更新一个`index.yaml`文件，然后托管在GitHub页面上。
 
